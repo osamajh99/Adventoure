@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imges/Adventour.png">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/Contact us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Contact</title>
+</head>
+<body>
+<!-- ........................start navebar................... -->
+<nav>
+  <input id="nav-toggle" type="checkbox">
+  <div class="Adventour"><img src="imges/Adventour.png" alt="" id="img-logo"></div>
+  <ul class="Adventour1">
+      <li><a href="home's.html"> <i class="fas fa-house-user"></i> Home</a></li>
+      <li><a href="home.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li> 
+  </ul>
+</nav>
+<!-- ........................end navebar................... -->
+
+<div class="contact">
+    <div class="title">
+      <h1>Contact us</h1>
+      <hr>
+    </div>
+   <form action="sendMessage.php" method="POST">
+    <div class="contact-input">
+      <div class="input">
+        <input type="text" class="input" placeholder="Name" name = "name" required>
+        <input type="email" class="input" placeholder="Email Address" name="email" required>
+        <input type="tel" class="input" placeholder="Phone" name ="phone" required>
+      </div>
+      <div class="Message">
+        <textarea placeholder="Message" name= "message" required></textarea>
+         <input type="submit" value="Send" style=" background: #39b7dd;
+         text-align: center;
+         padding: 15px 126px;
+   
+         border-radius: 5px;
+         color: #fff;
+         cursor: pointer;
+         text-transform: uppercase;
+         font-size: 20px;">
+      </div>
+    </div>
+   </form>
+  </div>
+</body>
+</html>

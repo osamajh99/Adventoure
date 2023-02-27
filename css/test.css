@@ -1,0 +1,77 @@
+#h{
+    
+    color: aliceblue;
+    background: linear-gradient(-135deg,#3498db, #4158d0);
+    height: 70px;
+    border-radius: 20px;
+}
+#form1{
+    
+    background: linear-gradient(-135deg,#81c1ec, #8798ee);
+    margin-top: 155px;
+    margin-left: 40%;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+
+    
+}
+
+#hdes{
+    padding-left: 5%; 
+    
+}
+#htr{
+    margin-top: 30px;
+    padding-left: 3%; 
+    
+}
+#hhot{
+    margin-top: 30px;
+    padding-left: 10%; 
+}
+#ddl{
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+#check{
+    margin-left: 8%;
+}
+.bottom {
+    margin-top: 3%;
+    margin-left: 15%;
+    height: 50px;
+    width: 1050px;
+    border-radius: 10px;
+    color: aliceblue;
+    background: linear-gradient(-135deg,#3498db, #4158d0);
+}
+#submit{
+    background: linear-gradient(-135deg,#3498db, #4158d0);
+    width: 20%;
+    /* height: 40px; */
+    border-radius: 12px;
+    border-color: transparent;
+    color: white;
+    margin-left: 610px;
+    margin-top: 3%;
+    position: relative;
+   
+
+}
+#in-date , #lbl{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.bottom input{
+    width: 150px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    
+}

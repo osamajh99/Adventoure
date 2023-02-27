@@ -1,0 +1,204 @@
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #42f3f9;
+    --dark: #0077B6;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    background: #90E0EF;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+		text-decoration: none;
+}
+.btn:hover{
+    opacity: 0.85;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+ .book{
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("img/Adventour.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 40px 60px;
+    width: 100%;
+    margin-top: 100px;
+    height: 400px;
+}
+.book-form{
+    display: grid;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.book-form input[type = "submit"]{
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.book-form label, .book-form input{
+    width: 100%;
+}
+.book-form label{
+    font-weight: 600;
+    word-spacing: 5px;
+    padding-bottom: 8px;
+}
+.book-form input:not(.btn){
+    /* margin: 4px 0 16px 0; */
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+.book-form input:focus{
+    outline: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+@media(min-width: 768px){
+    .book-form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+}
+@media(min-width: 1170px){
+    .book-form{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1370px){
+    .book-form{
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+    }
+    .book{
+        height: 40vh;
+        display: grid;
+    }
+}
+@media(max-width: 500px){
+    .book{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* room */
+
+.booking{
+    margin: 40px 0;
+}
+.room{
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--dark);
+    color: #fff;
+}
+.room-text{
+    padding: 5px 20px;
+}
+.room-text h3{
+    font-size: 24px;
+}
+.room-text ul{
+    list-style-type: none;
+    margin: 15px 0;
+}
+.room-text ul li{
+    padding: 7px 0;
+}
+.room-text ul li i{
+    color: var(--yellow);
+    margin-right: 10px;
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--yellow);
+}
+.room-image{
+    overflow: hidden;
+}
+.room-image img{
+    transition: var(--transition);
+}
+.room-image:hover img{
+    transform: scale(1.1);
+}
+@media (min-width: 900px){
+    .booking-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+@media(min-width: 1370px){
+    .rooms-container{
+        flex-direction: column;
+    }
+    .room{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .room-image{
+        flex: 1;
+    }
+    .room-image img{
+        height: 100%;
+    }
+    .room-text{
+        flex: 1;
+    }
+    .room:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+
+    width: 100%;
+    height: 500px;
+}
